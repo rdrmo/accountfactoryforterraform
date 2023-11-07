@@ -16,7 +16,7 @@ terraform {
 # Create an organization
 #resource "tfe_organization" "org" {
   # ...
-}
+#}
 
 provider "aws" {
   region = var.aws_region

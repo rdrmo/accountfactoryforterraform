@@ -8,6 +8,10 @@ terraform {
   }
 }
 
+#credentials "app.terraform.io" {
+#  token = "xxxxxx.atlasv1.zzzzzzzzzzzzz"
+#}
+
 #provider "tfc" {
 #  #hostname = var.hostname # Optional, defaults to Terraform Cloud `app.terraform.io`
 #  token    = var.terraformtoken

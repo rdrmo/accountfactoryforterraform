@@ -1,26 +1,26 @@
 variable "ct_management_account_id" {
   type = string
-  default = "291045144839"
+  default = "490456744512"
 }
 
 variable "log_archive_account_id" {
   type = string
-  default = "716856377128"
+  default = "911260410749"
 }
 
 variable "audit_account_id" {
   type = string
-  default = "354111917189"
+  default = "429476202566"
 }
 
 variable "aft_management_account_id" {
   type = string
-  default = "422822914274"
+  default = "302004634285"
 }
 
 variable "github_username" {
   type = string
-  default = "caprica64"
+  default = "rdrmo"
 }
 
 variable "ct_home_region" {

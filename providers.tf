@@ -4,6 +4,15 @@ provider "tfc" {
   version  = "~> 0.49.2"
 }
 
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~>4.41.0"
+    }
+  }
+}
+
 # Create an organization
 #resource "tfe_organization" "org" {
   # ...

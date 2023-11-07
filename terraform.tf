@@ -1,5 +1,5 @@
 terraform {
-
+/*
   cloud {
     organization = "Amazon_rdrmo"
 
@@ -7,6 +7,7 @@ terraform {
       name = "AccountFactoryForTerraformLab"
     }
   }
+*/
 
   required_providers {
     aws = {

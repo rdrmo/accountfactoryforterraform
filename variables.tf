@@ -33,9 +33,11 @@ variable "tf_backend_secondary_region" {
   default = "us-east-2"
 }
 
+/*
 variable "terraformtoken" {
   type = string
 }
+*/
 
 variable "aws_region" {
   type = string

@@ -5,7 +5,7 @@ provider "aws" {
 
 # Create a S3 bucket
 resource "aws_s3_bucket" "terraform_state" {
-  bucket		  = 389889727508-aft-test #"${var.bucket_name}"
+  bucket		  = "389889727508-aft-test"
   
   versioning {
     enabled = true

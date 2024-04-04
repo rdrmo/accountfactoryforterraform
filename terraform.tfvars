@@ -1,0 +1,7 @@
+ct_management_account_id    = "389889727508"
+log_archive_account_id      = "300347594645"
+audit_account_id            = "161943046395"
+aft_management_account_id   = "905418141469"
+github_username             = "rdrmo"
+ct_home_region              = "us-east-1"
+tf_backend_secondary_region = "us-east-2"

@@ -33,6 +33,7 @@ variable "tf_backend_secondary_region" {
   default = "us-east-2"
 }
 
-variable "terraformtoken" {
-  type = string
-}
+# Only used when hosting terraform OSS locally with remote state in TFC
+#variable "terraformtoken" {
+#  type = string
+#}

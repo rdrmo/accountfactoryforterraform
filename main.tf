@@ -1,17 +1,27 @@
-# Configure the AWS provider
-provider "aws" {
-  region = "us-east-1"
+module "aft" {
+  source = "github.com/aws-ia/terraform-aws-control_tower_account_factory"
+  ct_management_account_id    = var.ct_management_account_id
+  log_archive_account_id      = var.log_archive_account_id
+  audit_account_id            = var.audit_account_id
+  aft_management_account_id   = var.aft_management_account_id
+  ct_home_region              = var.ct_home_region
+  tf_backend_secondary_region = var.tf_backend_secondary_region
+
+  vcs_provider                                  = "github"
+  terraform_distribution                        = "tfc"
+  terraform_org_name                            = "Amazon_rdrmo"
+  terraform_api_endpoint                        = "https://app.terraform.io/api/v2/"
+  terraform_token                               = var.terraformtoken
+  account_request_repo_name                     = "${var.github_username}/aft-account-request"
+  account_provisioning_customizations_repo_name = "${var.github_username}/aft-account-provisioning-customizations"
+  global_customizations_repo_name               = "${var.github_username}/aft-global-customizations"
+  account_customizations_repo_name              = "${var.github_username}/aft-account-customizations"
 }
 
-# Create a S3 bucket
-resource "aws_s3_bucket" "terraform_state" {
-  bucket		  = "389889727508-aft-test"
-  
-  versioning {
-    enabled = true
-  }  
-  
-  lifecycle {
-    prevent_destroy = true
-  }
-}
+
+
+# Configure the AWS provider
+#provider "aws" {
+#  region = "us-east-1"
+#}
+ 

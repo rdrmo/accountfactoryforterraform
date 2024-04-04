@@ -11,7 +11,7 @@ module "aft" {
   terraform_distribution                        = "tfc"
   terraform_org_name                            = "Amazon_rdrmo"
   terraform_api_endpoint                        = "https://app.terraform.io/api/v2/"
-  terraform_token                               = var.terraformtoken
+  #terraform_token                               = var.terraformtoken #commented out as it is only used when TFC manages remote workspace
   account_request_repo_name                     = "${var.github_username}/aft-account-request"
   account_provisioning_customizations_repo_name = "${var.github_username}/aft-account-provisioning-customizations"
   global_customizations_repo_name               = "${var.github_username}/aft-global-customizations"
